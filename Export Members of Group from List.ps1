@@ -2,9 +2,9 @@
 
 function ExportMembersFromFile() {
     #Specify which txt file to read the codes from. One code per line.
-    $MLC_Codes = Get-Content "C:\Users\60071\OneDrive - SMSC Gaming Enterprise\Projects\PowerShell\mlc_codes1.txt"
+    $MLC_Codes = Get-Content "[PathToFile].txt"
     #Specify text file output below
-    $logFile = "$pwd\Non_IT_Members.txt"
+    $logFile = "$pwd\[ExportFileName].txt"
     
     #Loop through each line and print it in a text file
     foreach ($MLC_Code in $MLC_Codes) {
